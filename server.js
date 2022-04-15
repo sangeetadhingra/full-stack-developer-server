@@ -6,7 +6,7 @@ import cors from 'cors';
 import mongoose from 'mongoose'
 const CONNECTION_STRING =
     "mongodb+srv://giuseppi:supersecretpassword@cluster0.znfkc.mongodb.net/myFirstDatabase?retryWrites=true&w=majority" || 'mongodb://localhost:27017/webdev'
-mongoose.connect('mongodb://localhost:27017/webdev');
+mongoose.connect(CONNECTION_STRING);
 const app = express();
 app.use(cors());
 //app.get('/hello',(req, res) => {res.send('Hello World')})
